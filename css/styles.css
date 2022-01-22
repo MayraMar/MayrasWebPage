@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #696769;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container {
+  width: 85vw;
+  max-width: 1200px;
+  margin-top: 3rem;
+}
+
+body .container .fondo {
+  height: 35vh;
+  background-color: #b8546b;
+}
+
+body .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .content .img .color {
+  width: 30%;
+  height: 80vh;
+  background-color: lightcoral;
+}
+
+body .container .content .img img {
+  width: 80%;
+}
+
+body .container .content .img div.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.4rem;
+  color: #D3E0EA;
+  padding: 0.4rem;
+}
+
+body .container .content .img div.redes a:hover {
+  font-size: 2rem;
+}
+
+body .container .content .img div.redes li {
+  display: inline-block;
+  padding: 0.8rem;
+}
+
+body .container .content .img div.redes li a {
+  color: #FFF5FD;
+  text-decoration: none;
+}
+
+body .container .content .texto {
+  width: 90%;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=styles.css.map */

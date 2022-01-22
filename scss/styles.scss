@@ -1,0 +1,82 @@
+
+$back-col-all: #696769;
+$med-col:#D3E0EA;
+$dark-col: rgb(184, 84, 107);
+$light-col: #FFF5FD;
+$grey-col: #cfb3d4;
+
+@mixin redes(){
+    font-size: 1.4rem;
+    color:$med-col;
+    padding: 0.4rem;
+    a{ &:hover{
+        //color:$back-col-all;
+        font-size: 2rem;
+    }
+}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    a{
+        text-decoration: none;
+    }
+}
+
+
+
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color:$back-col-all;
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 85vw;
+        max-width: 1200px;
+        margin-top: 3rem;
+        .fondo{
+            height: 35vh;
+            background-color: $dark-col;
+        }
+        .content{
+            display: flex;
+            justify-content: space-evenly;
+            .img{
+                .color{
+                    width: 30%;
+                    height: 80vh;
+                    background-color: lightcoral;
+                }
+                img{
+                    width: 80%;
+                }
+                div.redes{
+                    display: flex;
+                    justify-content: space-evenly;
+                    @include redes;
+                        li{
+                            
+                            display: inline-block;
+                            padding: 0.8rem;
+                            a{
+                                color:$light-col;
+                                text-decoration: none;
+                            }
+                        }
+                
+                }
+            }
+            .texto{
+                width: 90%;
+                font-size: 3rem;
+            }
+        }
+    }
+}

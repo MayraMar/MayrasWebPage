@@ -2,7 +2,7 @@
 $back-col-all: #696769;
 $med-col:#D3E0EA;
 $dark-col: rgb(184, 84, 107);
-$light-col: #FFF5FD;
+$light-col: rgb(232, 174, 188);
 $grey-col: #cfb3d4;
 
 @mixin redes(){
@@ -31,6 +31,7 @@ $grey-col: #cfb3d4;
 
 html{
     font-family: 'Lato', sans-serif;
+    font-size: 14px;
 }
 
 body{
@@ -42,25 +43,40 @@ body{
         max-width: 1200px;
         margin-top: 3rem;
         .fondo{
-            height: 35vh;
+            position: relative;
+            height: 58vh;
             background-color: $dark-col;
+            z-index: -2;
         }
         .content{
+            position: absolute;
+            top:7rem;
             display: flex;
             justify-content: space-evenly;
             .img{
-                .color{
-                    width: 30%;
-                    height: 80vh;
-                    background-color: lightcoral;
-                }
+                
+                width: 100%;
                 img{
-                    width: 80%;
+                    width: 75%;
+                    margin-left: 10%;
+                   
                 }
+                .color{
+                    width: 33%;
+                    height: 100vh;
+                    background-color: $light-col;
+                    position: absolute;
+                    top: 5rem;
+                    left: 10rem;
+                    z-index: -1;
+                }
+                
                 div.redes{
+                    @include redes;
+                    padding-top: 3rem;
                     display: flex;
                     justify-content: space-evenly;
-                    @include redes;
+                    
                         li{
                             
                             display: inline-block;
@@ -74,9 +90,49 @@ body{
                 }
             }
             .texto{
-                width: 90%;
-                font-size: 3rem;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                font-size: 2rem;
+                padding: 1rem;
+                padding-bottom: 4rem;
+                padding-right: 5rem;
+                
+                .hola{
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    width: 15%;
+                    background-color: white;
+                    padding: 0.3rem;
+                    margin-bottom: 1.5rem;
+                }
+                .nombre{
+                    font-size: 3.5rem;
+                    margin-bottom: 2rem;
+                    font-weight: bold;
+                }
+                .description{
+                    margin-bottom: 1rem;
+                    padding-right: 5rem;
+                }
+                p:nth-child(3){
+                    color: white;
+                }
+                
+                button{
+                    color: $back-col-all;
+                    border-style: none;
+                    margin-left: 25%;
+                    margin-top: 2rem;
+                    padding: 1rem;
+                    border-radius: 2rem;
+                    width: 35%;
+                    background-color: $light-col;
+                    font-size: 1.2rem;
+                    
+                };
             }
+            
         }
     }
 }

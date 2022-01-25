@@ -1,138 +1,174 @@
-
 $back-col-all: #696769;
-$med-col:#D3E0EA;
+$med-col: #d3e0ea;
 $dark-col: rgb(184, 84, 107);
 $light-col: rgb(232, 174, 188);
 $grey-col: #cfb3d4;
 
-@mixin redes(){
-    font-size: 1.4rem;
-    color:$med-col;
+@mixin redes() {
+    font-size: 1.6rem;
+    color: $back-col-all;
     padding: 0.4rem;
-    a{ &:hover{
-        //color:$back-col-all;
-        font-size: 2rem;
+    a {
+        &:hover {
+            //color:$back-col-all;
+            font-size: 2.2rem;
+        }
     }
 }
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     list-style: none;
-    a{
+    a {
         text-decoration: none;
     }
 }
 
-
-
-html{
-    font-family: 'Lato', sans-serif;
+html {
+    font-family: "Lato", sans-serif;
     font-size: 14px;
 }
 
-body{
-    background-color:$back-col-all;
-    display: flex;
-    justify-content: center;
-    .container{
-        width: 85vw;
-        max-width: 1200px;
-        margin-top: 3rem;
-        .fondo{
-            position: relative;
-            height: 58vh;
-            background-color: $dark-col;
-            z-index: -2;
-        }
-        .content{
-            position: absolute;
-            top:7rem;
-            display: flex;
-            justify-content: space-evenly;
-            .img{
-                
-                width: 100%;
-                img{
-                    width: 75%;
-                    margin-left: 10%;
-                   
-                }
-                .color{
-                    width: 33%;
-                    height: 100vh;
-                    background-color: $light-col;
-                    position: absolute;
-                    top: 5rem;
-                    left: 10rem;
-                    z-index: -1;
-                }
-                
-                div.redes{
-                    @include redes;
-                    padding-top: 3rem;
-                    display: flex;
-                    justify-content: space-evenly;
-                    
-                        li{
-                            
+body {
+    background-color: $back-col-all;
+    main {
+        display: flex;
+        justify-content: center;
+        .container {
+            width: 85vw;
+            max-width: 1200px;
+            margin-top: 1rem;
+
+            .fondo {
+                position: relative;
+                height: 55vh;
+                background-color: $dark-col;
+                z-index: -2;
+            }
+            .content {
+                position: relative;
+                top: -50vh;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .img {
+                    width: 50%;
+                    img {
+                        width: 75%;
+                        margin-left: 10%;
+                    }
+                    .color {
+                        width: 33%;
+                        height: 80%;
+                        background-color: $light-col;
+                        position: absolute;
+                        top: 5rem;
+                        left: 10rem;
+                        z-index: -1;
+                    }
+
+                    div.redes {
+                        @include redes;
+                        padding-top: 1rem;
+                        display: flex;
+                        justify-content: space-evenly;
+                        position: relative;
+                        left: 10%;
+                        li {
                             display: inline-block;
                             padding: 0.8rem;
-                            a{
-                                color:$light-col;
+                            a {
+                                color: $back-col-all;
                                 text-decoration: none;
                             }
                         }
-                
+                    }
                 }
-            }
-            .texto{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                font-size: 2rem;
-                padding: 1rem;
-                padding-bottom: 4rem;
-                padding-right: 5rem;
-                
-                .hola{
-                    font-size: 2.5rem;
-                    font-weight: bold;
-                    width: 15%;
-                    background-color: white;
-                    padding: 0.3rem;
-                    margin-bottom: 1.5rem;
-                }
-                .nombre{
-                    font-size: 3.5rem;
-                    margin-bottom: 2rem;
-                    font-weight: bold;
-                }
-                .description{
-                    margin-bottom: 1rem;
+                .texto {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    font-size: 2rem;
+                    padding-bottom: 4rem;
                     padding-right: 5rem;
+
+                    .hola {
+                        font-size: 2.5rem;
+                        font-weight: bold;
+                        width: 15%;
+                        background-color: white;
+                        padding: 0.3rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .nombre {
+                        font-size: 3.5rem;
+                        margin-bottom: 2rem;
+                        font-weight: bold;
+                    }
+                    .description {
+                        margin-bottom: 1rem;
+                        padding-right: 5rem;
+                    }
+                    p:nth-child(3) {
+                        padding-top: 1rem;
+                        color: white;
+                    }
+                    p:nth-child(4) {
+                        // padding-top: 1rem;
+                        color: white;
+                    }
+
+                    button {
+                        color: $back-col-all;
+                        border-style: none;
+                        margin-left: 25%;
+                        margin-top: 1rem;
+                        padding: 1rem;
+                        border-radius: 2rem;
+                        width: 35%;
+                        background-color: $light-col;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
                 }
-                p:nth-child(3){
-                    color: white;
+                section {
+                    width: 100%;
+                    margin-right: 7.5vw;
+                    p {
+                        justify-self: flex-start;
+                        font-size: 2.5rem;
+                        font-weight: bold;
+                        width: 35%;
+                        background-color: white;
+                        padding: 0.3rem;
+                        margin-bottom: 1.5rem;
+                        margin-top: 1rem;
+                    }
+                    div {
+                        display: flex;
+                        div {
+                            height: 15rem;
+                            width: 25%;
+                        }
+                        div:nth-child(2n) {
+                            background-color: green;
+                        }
+                    }
+                    .invite {
+                        width: 100%;
+                        background-color: transparent;
+                        font-size: 1.8rem;
+                        color: white;
+                    }
                 }
-                
-                button{
-                    color: $back-col-all;
-                    border-style: none;
-                    margin-left: 25%;
-                    margin-top: 2rem;
-                    padding: 1rem;
-                    border-radius: 2rem;
-                    width: 35%;
-                    background-color: $light-col;
-                    font-size: 1.2rem;
-                    
-                };
             }
-            
         }
+    }
+    footer {
+        text-align: center;
+        padding: 2rem;
     }
 }

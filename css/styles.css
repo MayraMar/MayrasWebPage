@@ -18,6 +18,9 @@ html {
 
 body {
   background-color: #696769;
+}
+
+body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,42 +29,44 @@ body {
           justify-content: center;
 }
 
-body .container {
+body main .container {
   width: 85vw;
   max-width: 1200px;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
-body .container .fondo {
+body main .container .fondo {
   position: relative;
-  height: 58vh;
+  height: 55vh;
   background-color: #b8546b;
   z-index: -2;
 }
 
-body .container .content {
-  position: absolute;
-  top: 7rem;
+body main .container .content {
+  position: relative;
+  top: -50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-body .container .content .img {
-  width: 100%;
+body main .container .content .img {
+  width: 50%;
 }
 
-body .container .content .img img {
+body main .container .content .img img {
   width: 75%;
   margin-left: 10%;
 }
 
-body .container .content .img .color {
+body main .container .content .img .color {
   width: 33%;
-  height: 100vh;
+  height: 80%;
   background-color: #e8aebc;
   position: absolute;
   top: 5rem;
@@ -69,34 +74,36 @@ body .container .content .img .color {
   z-index: -1;
 }
 
-body .container .content .img div.redes {
-  font-size: 1.4rem;
-  color: #D3E0EA;
+body main .container .content .img div.redes {
+  font-size: 1.6rem;
+  color: #696769;
   padding: 0.4rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  position: relative;
+  left: 10%;
 }
 
-body .container .content .img div.redes a:hover {
-  font-size: 2rem;
+body main .container .content .img div.redes a:hover {
+  font-size: 2.2rem;
 }
 
-body .container .content .img div.redes li {
+body main .container .content .img div.redes li {
   display: inline-block;
   padding: 0.8rem;
 }
 
-body .container .content .img div.redes li a {
-  color: #e8aebc;
+body main .container .content .img div.redes li a {
+  color: #696769;
   text-decoration: none;
 }
 
-body .container .content .texto {
+body main .container .content .texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,14 +111,13 @@ body .container .content .texto {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 50%;
   font-size: 2rem;
-  padding: 1rem;
   padding-bottom: 4rem;
   padding-right: 5rem;
 }
 
-body .container .content .texto .hola {
+body main .container .content .texto .hola {
   font-size: 2.5rem;
   font-weight: bold;
   width: 15%;
@@ -120,30 +126,79 @@ body .container .content .texto .hola {
   margin-bottom: 1.5rem;
 }
 
-body .container .content .texto .nombre {
+body main .container .content .texto .nombre {
   font-size: 3.5rem;
   margin-bottom: 2rem;
   font-weight: bold;
 }
 
-body .container .content .texto .description {
+body main .container .content .texto .description {
   margin-bottom: 1rem;
   padding-right: 5rem;
 }
 
-body .container .content .texto p:nth-child(3) {
+body main .container .content .texto p:nth-child(3) {
+  padding-top: 1rem;
   color: white;
 }
 
-body .container .content .texto button {
+body main .container .content .texto p:nth-child(4) {
+  color: white;
+}
+
+body main .container .content .texto button {
   color: #696769;
   border-style: none;
   margin-left: 25%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
   border-radius: 2rem;
   width: 35%;
   background-color: #e8aebc;
   font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body main .container .content section {
+  width: 100%;
+  margin-right: 7.5vw;
+}
+
+body main .container .content section p {
+  justify-self: flex-start;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 35%;
+  background-color: white;
+  padding: 0.3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+body main .container .content section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .container .content section div div {
+  height: 15rem;
+  width: 25%;
+}
+
+body main .container .content section div div:nth-child(2n) {
+  background-color: green;
+}
+
+body main .container .content section .invite {
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.8rem;
+  color: white;
+}
+
+body footer {
+  text-align: center;
+  padding: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

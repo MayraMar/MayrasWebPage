@@ -39,18 +39,18 @@ body {
         justify-content: center;
         .container {
             width: 85vw;
-            max-width: 1200px;
+            max-width: 1400px;
             margin-top: 1rem;
 
             .fondo {
-                position: relative;
-                height: 55vh;
+                position: absolute;
+                height: 37%;
                 background-color: $dark-col;
                 z-index: -2;
+                width:85vw
             }
             .content {
-                position: relative;
-                top: -50vh;
+                padding-top: 7%;
                 display: flex;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
@@ -58,14 +58,14 @@ body {
                     width: 50%;
                     img {
                         width: 75%;
-                        margin-left: 10%;
+                        margin-left: 20%;
                     }
                     .color {
                         width: 33%;
-                        height: 80%;
+                        height: 200%;
                         background-color: $light-col;
                         position: absolute;
-                        top: 5rem;
+                        top: 5%;
                         left: 10rem;
                         z-index: -1;
                     }
@@ -93,7 +93,7 @@ body {
                     width: 50%;
                     font-size: 2rem;
                     padding-bottom: 4rem;
-                    padding-right: 5rem;
+                    padding-right: 1rem;
 
                     .hola {
                         font-size: 2.5rem;
@@ -110,22 +110,20 @@ body {
                     }
                     .description {
                         margin-bottom: 1rem;
-                        padding-right: 5rem;
-                    }
-                    p:nth-child(3) {
-                        padding-top: 1rem;
+                        
                         color: white;
                     }
-                    p:nth-child(4) {
-                        // padding-top: 1rem;
-                        color: white;
-                    }
+                    // p:nth-child(3) {
+                    //     padding-top: 1rem;
+                    //     color: white;
+                    // }
+                    
 
                     button {
                         color: $back-col-all;
                         border-style: none;
                         margin-left: 25%;
-                        margin-top: 1rem;
+                        margin-top: 2rem;
                         padding: 1rem;
                         border-radius: 2rem;
                         width: 35%;
@@ -136,7 +134,7 @@ body {
                 }
                 section {
                     width: 100%;
-                    margin-right: 7.5vw;
+                    
                     p {
                         justify-self: flex-start;
                         font-size: 2.5rem;
@@ -147,21 +145,69 @@ body {
                         margin-bottom: 1.5rem;
                         margin-top: 1rem;
                     }
-                    div {
-                        display: flex;
-                        div {
-                            height: 15rem;
-                            width: 25%;
-                        }
-                        div:nth-child(2n) {
-                            background-color: green;
+                    .fondo-pjs{
+                        background-color: $dark-col;
+                        z-index: -1;
+                        height: 17rem;
+                        //position: absolute;
+                        //top: 100%;
+                        width: 85vw;
+                        p{
+                            position: relative;
+                            padding-left: 1rem;
+                            top: 2rem;
+                            margin-left: 1rem;
                         }
                     }
+                    .projects {
+                        position: relative;
+                        top:-10rem;
+                        display: flex;
+                        
+                        width: 100%;
+                        align-items: center;
+                        justify-content: space-around;
+                        
+                        .project {
+                            
+                            width: 25%;
+                            padding: 1rem;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .on-top {
+                        
+                        position: relative;
+                        bottom: 9.2rem;
+                        opacity: 0;
+                        
+                        height: 9rem;
+                        background-color: white;
+                        
+                        font-size: 2rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:black;
+                        
+                    }
+                    .on-top:hover {
+                        opacity: 90%;
+                    }
+                    .other{
+                        position: relative;
+                        top: -15rem;
+                    }
                     .invite {
+                        position: relative;
+                        top: -15rem;
                         width: 100%;
                         background-color: transparent;
                         font-size: 1.8rem;
-                        color: white;
+                        //color: white;
                     }
                 }
             }

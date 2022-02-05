@@ -243,4 +243,67 @@ body footer {
   text-align: center;
   padding: 2rem;
 }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 9px;
+  }
+  html body main .container {
+    width: 95vw;
+  }
+  html body main .container .fondo {
+    width: 95%;
+  }
+  html body main .container .content {
+    margin-top: 1rem;
+  }
+  html body main .container .content section .fondo-pjs {
+    width: 100%;
+  }
+  html body main .container .content section .projects {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html body main .container .content section .projects .project {
+    width: 50%;
+  }
+  html body main .container .content section .projects .project .on-top {
+    bottom: 15rem;
+    height: 14rem;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 8px;
+  }
+  html body main .container .content .img {
+    width: 90%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  html body main .container .content .img img {
+    width: 75%;
+    margin-left: 10%;
+    position: absolute;
+    top: 20rem;
+  }
+  html body main .container .content .texto .nombre {
+    margin-bottom: 480px;
+  }
+  html body main .container .content section .projects {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html body main .container .content section .projects .project {
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

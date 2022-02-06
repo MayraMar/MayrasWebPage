@@ -62,7 +62,7 @@ body {
                     }
                     .color {
                         width: 33%;
-                        height: 200%;
+                        height: 200%; //HAY QUE ARREGLAR ESTO
                         background-color: $light-col;
                         position: absolute;
                         top: 5%;
@@ -217,10 +217,24 @@ body {
 @media (max-width: 1200px) {
     html {
         font-size: 11px;
+        body{
+            main{
+                .container{
+                    .content{
+                        .img{
+                            .color{
+                                height: 180%;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     html {
         font-size: 9px;
         body {
@@ -231,7 +245,11 @@ body {
                     }
                     width: 95vw;
                     .content {
-                        //HAY VARIAS COSAS Q AJUSTAR A ESTE ANCHO
+                        .img{
+                            .color{
+                                height: 270%;
+                            }
+                        }
                         margin-top: 1rem;
                         section {
                             .fondo-pjs {
@@ -240,13 +258,26 @@ body {
                             .projects {
                                 flex-wrap: wrap;
                                 .project {
+                                    padding: 2rem;
                                     width: 50%;
+                                    .on-top{
+                                        display: none;
+                                        img{
+                                            border-width: 0.5rem;
+                                            border-color: $light-col;
+                                        }
+                                    }
                                     .on-top {
                                         bottom: 15rem;
                                         height: 14rem;
                                     }
                                 }
                             }
+                            
+                                .other{
+                                    margin-top:10rem;
+                                }
+                            
                         }
                     }
                 }
@@ -261,29 +292,60 @@ body {
         body {
             main {
                 .container {
+                    .fondo {
+                        width: 100%;
+                    }
                     .content {
+                        margin-top: 0;
                         .img {
                             width: 90%;
                             order: 2;
-                            img {
-                                width: 75%;
-                                margin-left: 10%;
-                                position: absolute;
-                                top:20rem;
-                                
+                                      img {
+                                width: 65%;
+                                                                position: absolute;
+                                top: 19rem;
+                            }
+                            .color{
+                                height: 600px;
                             }
                         }
-                        .texto{
-                            .nombre{
-                                margin-bottom: 480px;
+                        .texto {
+                            width: 95%;
+                            font-size: 2.7rem;
+                            .hola {
+                                font-size: 3.5rem;
+                                width: 20%;
+                            }
+                            .nombre {
+                                margin: 0;
+                                margin-bottom: 77vw;
+                                font-size: 4rem;
+                            }
+                            button {
+                                margin-left: 55%;
+                                width: 35%;
+                                padding: 2rem;
+                                font-size: 2rem;
                             }
                         }
                         section {
+                            .fondo-pjs{
+                                p{
+                                    width: 50%;
+                                }
+                            }
                             .projects {
                                 flex-wrap: wrap;
                                 .project {
-                                    width: 90%; //no lo esta tomando
+                                    width: 90%; 
+                                    
                                 }
+                            }
+                            .other{
+                                top:-10rem;
+                            }
+                            .invite{
+                                top:-10rem;
                             }
                         }
                     }
@@ -291,5 +353,5 @@ body {
             }
         }
     }
-    // cambiar todo de lugar
+    
 }

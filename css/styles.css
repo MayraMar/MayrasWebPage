@@ -248,9 +248,12 @@ body footer {
   html {
     font-size: 11px;
   }
+  html body main .container .content .img .color {
+    height: 180%;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   html {
     font-size: 9px;
   }
@@ -263,6 +266,9 @@ body footer {
   html body main .container .content {
     margin-top: 1rem;
   }
+  html body main .container .content .img .color {
+    height: 270%;
+  }
   html body main .container .content section .fondo-pjs {
     width: 100%;
   }
@@ -271,17 +277,34 @@ body footer {
         flex-wrap: wrap;
   }
   html body main .container .content section .projects .project {
+    padding: 2rem;
     width: 50%;
+  }
+  html body main .container .content section .projects .project .on-top {
+    display: none;
+  }
+  html body main .container .content section .projects .project .on-top img {
+    border-width: 0.5rem;
+    border-color: #e8aebc;
   }
   html body main .container .content section .projects .project .on-top {
     bottom: 15rem;
     height: 14rem;
+  }
+  html body main .container .content section .other {
+    margin-top: 10rem;
   }
 }
 
 @media (max-width: 650px) {
   html {
     font-size: 8px;
+  }
+  html body main .container .fondo {
+    width: 100%;
+  }
+  html body main .container .content {
+    margin-top: 0;
   }
   html body main .container .content .img {
     width: 90%;
@@ -290,13 +313,34 @@ body footer {
             order: 2;
   }
   html body main .container .content .img img {
-    width: 75%;
-    margin-left: 10%;
+    width: 65%;
     position: absolute;
-    top: 20rem;
+    top: 19rem;
+  }
+  html body main .container .content .img .color {
+    height: 600px;
+  }
+  html body main .container .content .texto {
+    width: 95%;
+    font-size: 2.7rem;
+  }
+  html body main .container .content .texto .hola {
+    font-size: 3.5rem;
+    width: 20%;
   }
   html body main .container .content .texto .nombre {
-    margin-bottom: 480px;
+    margin: 0;
+    margin-bottom: 77vw;
+    font-size: 4rem;
+  }
+  html body main .container .content .texto button {
+    margin-left: 55%;
+    width: 35%;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  html body main .container .content section .fondo-pjs p {
+    width: 50%;
   }
   html body main .container .content section .projects {
     -ms-flex-wrap: wrap;
@@ -304,6 +348,12 @@ body footer {
   }
   html body main .container .content section .projects .project {
     width: 90%;
+  }
+  html body main .container .content section .other {
+    top: -10rem;
+  }
+  html body main .container .content section .invite {
+    top: -10rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

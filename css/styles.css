@@ -54,7 +54,7 @@ body main .container {
 }
 
 body main .container .content {
-  padding-top: 3rem;
+  padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,6 +259,10 @@ body main .container .content section .fondo-pjs .project a {
           align-items: center;
   font-weight: bold;
   color: black;
+}
+
+body main .container .content section .fondo-pjs .project a:hover {
+  opacity: 35%;
 }
 
 body main .container .content section .fondo-pjs .project img {

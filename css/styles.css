@@ -5,6 +5,7 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
+  overflow-x: hidden;
 }
 
 * a {
@@ -20,6 +21,25 @@ body {
   background-color: #696769;
 }
 
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 65%;
+}
+
+body nav a {
+  color: white;
+  text-decoration: none;
+  border-left: solid;
+  padding: 0.3rem 1.2rem;
+  margin-top: 1rem;
+}
+
+body nav a:hover {
+  color: #e8aebc;
+}
+
 body main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,21 +50,11 @@ body main {
 }
 
 body main .container {
-  width: 85vw;
-  max-width: 1400px;
   margin-top: 1rem;
 }
 
-body main .container .fondo {
-  position: absolute;
-  height: 37%;
-  background-color: #b8546b;
-  z-index: -2;
-  width: 85vw;
-}
-
 body main .container .content {
-  padding-top: 7%;
+  padding-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,55 +65,47 @@ body main .container .content {
       flex-wrap: wrap;
 }
 
-body main .container .content .img {
-  width: 50%;
+body main .container .content .img-perfil {
+  width: 40%;
 }
 
-body main .container .content .img img {
-  width: 75%;
-  margin-left: 20%;
+body main .container .content .img-perfil img {
+  width: 80%;
+  margin-left: 7%;
+  border-radius: 50%;
 }
 
-body main .container .content .img .color {
-  width: 33%;
-  height: 200%;
-  background-color: #e8aebc;
-  position: absolute;
-  top: 5%;
-  left: 10rem;
-  z-index: -1;
-}
-
-body main .container .content .img div.redes {
-  font-size: 1.6rem;
-  color: #696769;
+body main .container .content div.redes {
+  color: #ffeef2;
   padding: 0.4rem;
   padding-top: 1rem;
+}
+
+body main .container .content div.redes a:hover {
+  color: #e8aebc;
+}
+
+body main .container .content div.redes ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  position: relative;
-  left: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-body main .container .content .img div.redes a:hover {
-  font-size: 2.2rem;
-}
-
-body main .container .content .img div.redes li {
-  display: inline-block;
+body main .container .content div.redes li {
   padding: 0.8rem;
 }
 
-body main .container .content .img div.redes li a {
-  color: #696769;
+body main .container .content div.redes li a {
   text-decoration: none;
+  color: #ffeef2;
 }
 
-body main .container .content .texto {
+body main .container .content .texto-presentacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,13 +113,14 @@ body main .container .content .texto {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 60%;
   font-size: 2rem;
   padding-bottom: 4rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 2rem;
 }
 
-body main .container .content .texto .hola {
+body main .container .content .texto-presentacion .hola {
   font-size: 2.5rem;
   font-weight: bold;
   width: 15%;
@@ -126,21 +129,163 @@ body main .container .content .texto .hola {
   margin-bottom: 1.5rem;
 }
 
-body main .container .content .texto .nombre {
+body main .container .content .texto-presentacion .nombre {
   font-size: 3.5rem;
   margin-bottom: 2rem;
   font-weight: bold;
 }
 
-body main .container .content .texto .description {
+body main .container .content .texto-presentacion .description {
   margin-bottom: 1rem;
   color: white;
 }
 
-body main .container .content .texto button {
+body main .container .content section {
+  width: 100%;
+}
+
+body main .container .content section .fondo-pjs {
+  background-color: #ffeef2;
+  z-index: -1;
+  width: 100%;
+}
+
+body main .container .content section .fondo-pjs p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2.5rem 3rem;
+  padding-bottom: 1.5rem;
+}
+
+body main .container .content section .fondo-pjs .lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .container .content section .fondo-pjs .lista .educ {
+  background-color: #b5b4b5;
+}
+
+body main .container .content section .fondo-pjs .lista .educ .edu {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0px 0px;
+}
+
+body main .container .content section .fondo-pjs .lista .educ img {
+  width: 30%;
+}
+
+body main .container .content section .fondo-pjs .lista .educ,
+body main .container .content section .fondo-pjs .lista .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 25%;
+  padding: 1rem;
+  min-height: 200px;
+}
+
+body main .container .content section .fondo-pjs .skills {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+body main .container .content section .fondo-pjs .skills .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 150px;
+  padding: 0.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+body main .container .content section .fondo-pjs .skills .skill img {
+  max-height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20%;
+}
+
+body main .container .content section .fondo-pjs .skills .skill p {
+  font-size: 1rem;
+  padding: 0px 0px;
+}
+
+body main .container .content section .fondo-pjs .project {
+  width: 15%;
+  padding: 1rem;
+}
+
+body main .container .content section .fondo-pjs .project a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: black;
+}
+
+body main .container .content section .fondo-pjs .project img {
+  padding-bottom: 0.5rem;
+  width: 80%;
+}
+
+body main .container .content section .fondo-pjs .project p {
+  font-size: 1rem;
+  padding: 0px 0px;
+}
+
+body main .container .content section .fondo-pjs .invite {
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.8rem;
+  padding-top: 0%;
+}
+
+body main .container .content .section-pjs {
+  margin-top: 3rem;
+}
+
+body main .container button {
   color: #696769;
   border-style: none;
-  margin-left: 25%;
+  margin-left: 32%;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 2rem;
@@ -148,211 +293,132 @@ body main .container .content .texto button {
   background-color: #e8aebc;
   font-size: 1.2rem;
   font-weight: bold;
+  text-align: center;
 }
 
-body main .container .content section {
-  width: 100%;
+body main .container button:hover {
+  background-color: #e29aac;
 }
 
-body main .container .content section p {
-  justify-self: flex-start;
-  font-size: 2.5rem;
-  font-weight: bold;
-  width: 35%;
-  background-color: white;
-  padding: 0.3rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-}
-
-body main .container .content section .fondo-pjs {
-  background-color: #b8546b;
-  z-index: -1;
-  height: 17rem;
-  width: 85vw;
-}
-
-body main .container .content section .fondo-pjs p {
-  position: relative;
-  padding-left: 1rem;
-  top: 2rem;
-  margin-left: 1rem;
-}
-
-body main .container .content section .projects {
-  position: relative;
-  top: -10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body main .container .content section .projects .project {
-  width: 25%;
-  padding: 1rem;
-}
-
-body main .container .content section .projects .project img {
-  width: 100%;
-}
-
-body main .container .content section .on-top {
-  position: relative;
-  bottom: 9.2rem;
-  opacity: 0;
-  height: 9rem;
-  background-color: white;
-  font-size: 2rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: black;
-}
-
-body main .container .content section .on-top:hover {
-  opacity: 90%;
-}
-
-body main .container .content section .other {
-  position: relative;
-  top: -15rem;
-}
-
-body main .container .content section .invite {
-  position: relative;
-  top: -15rem;
-  width: 100%;
-  background-color: transparent;
-  font-size: 1.8rem;
+body main .container button a {
+  padding: 0rem 30%;
 }
 
 body footer {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
+  color: white;
 }
 
 @media (max-width: 1200px) {
-  html {
+  body html {
     font-size: 11px;
   }
-  html body main .container .content .img .color {
+  body html body main .container .content .img .color {
     height: 180%;
   }
 }
 
 @media (max-width: 900px) {
-  html {
+  body html {
     font-size: 9px;
   }
-  html body main .container {
+  body html body main .container {
     width: 95vw;
   }
-  html body main .container .fondo {
+  body html body main .container .fondo {
     width: 95%;
   }
-  html body main .container .content {
+  body html body main .container .content {
     margin-top: 1rem;
   }
-  html body main .container .content .img .color {
+  body html body main .container .content .img .color {
     height: 270%;
   }
-  html body main .container .content section .fondo-pjs {
+  body html body main .container .content section .fondo-pjs {
     width: 100%;
   }
-  html body main .container .content section .projects {
+  body html body main .container .content section .projects {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  html body main .container .content section .projects .project {
+  body html body main .container .content section .projects .project {
     padding: 2rem;
     width: 50%;
   }
-  html body main .container .content section .projects .project .on-top {
+  body html body main .container .content section .projects .project .on-top {
     display: none;
   }
-  html body main .container .content section .projects .project .on-top img {
+  body html body main .container .content section .projects .project .on-top img {
     border-width: 0.5rem;
     border-color: #e8aebc;
   }
-  html body main .container .content section .projects .project .on-top {
+  body html body main .container .content section .projects .project .on-top {
     bottom: 15rem;
     height: 14rem;
   }
-  html body main .container .content section .other {
+  body html body main .container .content section .other {
     margin-top: 10rem;
   }
 }
 
 @media (max-width: 650px) {
-  html {
+  body html {
     font-size: 8px;
   }
-  html body main .container .fondo {
+  body html body main .container .fondo {
     width: 100%;
   }
-  html body main .container .content {
+  body html body main .container .content {
     margin-top: 0;
   }
-  html body main .container .content .img {
+  body html body main .container .content .img {
     width: 90%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  html body main .container .content .img img {
+  body html body main .container .content .img img {
     width: 65%;
     position: absolute;
     top: 19rem;
   }
-  html body main .container .content .img .color {
+  body html body main .container .content .img .color {
     height: 600px;
   }
-  html body main .container .content .texto {
+  body html body main .container .content .texto {
     width: 95%;
     font-size: 2.7rem;
   }
-  html body main .container .content .texto .hola {
+  body html body main .container .content .texto .hola {
     font-size: 3.5rem;
     width: 20%;
   }
-  html body main .container .content .texto .nombre {
+  body html body main .container .content .texto .nombre {
     margin: 0;
     margin-bottom: 77vw;
     font-size: 4rem;
   }
-  html body main .container .content .texto button {
+  body html body main .container .content .texto button {
     margin-left: 55%;
     width: 35%;
     padding: 2rem;
     font-size: 2rem;
   }
-  html body main .container .content section .fondo-pjs p {
+  body html body main .container .content section .fondo-pjs p {
     width: 50%;
   }
-  html body main .container .content section .projects {
+  body html body main .container .content section .projects {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  html body main .container .content section .projects .project {
+  body html body main .container .content section .projects .project {
     width: 90%;
   }
-  html body main .container .content section .other {
+  body html body main .container .content section .other {
     top: -10rem;
   }
-  html body main .container .content section .invite {
+  body html body main .container .content section .invite {
     top: -10rem;
   }
 }

@@ -38,8 +38,9 @@ body {
     background-color: $back-col-all;
     nav {
         display: flex;
-        //justify-content: space-around;
-        padding-left: 65%;
+        position: absolute;
+        right: 0px;
+
         a {
             color: white;
             text-decoration: none;
@@ -55,7 +56,7 @@ body {
     main {
         display: flex;
         justify-content: center;
-
+        padding-top: 2rem;
         .container {
             //width: 95vw;
             //max-width: 1400px;
@@ -167,15 +168,13 @@ body {
                                     font-size: 1.6rem;
                                     text-align: center;
                                     padding: 0px 0px;
-                                    
                                 }
                                 img {
-                                    width: 30%;
+                                    width: 60px;
                                 }
                                 background-color: lighten($back-col-all, 30%);
                             }
-                            .educ,
-                            .project {
+                            .educ {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
@@ -186,8 +185,8 @@ body {
                             }
                         }
                         .skills {
-                            margin-left: 2rem;
-                            margin-right: 2rem;
+                            // margin-left: 2rem;
+                            // margin-right: 2rem;
 
                             .skill {
                                 display: flex;
@@ -211,72 +210,70 @@ body {
                             }
                         }
                         .project {
-                            
-                            width: 15%;
-                            padding: 1rem;
-                            a{
+                            width: 250px;
+                            margin: 1rem;
+                            a {
                                 display: flex;
                                 flex-direction: column-reverse;
                                 align-items: center;
                                 font-weight: bold;
                                 color: black;
-                                &:hover{
+                                &:hover {
                                     opacity: 35%;
                                 }
                             }
                             img {
                                 padding-bottom: 0.5rem;
-                                width: 80%;
+                                width: 100%;
                             }
                             p {
                                 font-size: 1rem;
                                 padding: 0px 0px;
                             }
                         }
-                    
-                    // .on-top {
-                    //     position: relative;
-                    //     bottom: 9.2rem;
-                    //     opacity: 0;
 
-                    //     height: 9rem;
-                    //     background-color: white;
+                        // .on-top {
+                        //     position: relative;
+                        //     bottom: 9.2rem;
+                        //     opacity: 0;
 
-                    //     font-size: 2rem;
-                    //     width: 100%;
-                    //     display: flex;
-                    //     justify-content: center;
-                    //     align-items: center;
-                    //     color: black;
-                    // }
-                    // .on-top:hover {
-                    //     opacity: 90%;
-                    // }
-                    // // 
-                    // .other {
-                    //         font-size: 2.5rem;
-                    //         font-weight: bold;
-                    //         padding: 2rem 3rem;
-                    //      }
-                    .invite {
-                        // position: relative;
-                        // top: -15rem;
-                        width: 100%;
-                        background-color: transparent;
-                        font-size: 1.8rem;
-                        //color: white;
-                        padding-top: 0%;
+                        //     height: 9rem;
+                        //     background-color: white;
+
+                        //     font-size: 2rem;
+                        //     width: 100%;
+                        //     display: flex;
+                        //     justify-content: center;
+                        //     align-items: center;
+                        //     color: black;
+                        // }
+                        // .on-top:hover {
+                        //     opacity: 90%;
+                        // }
+                        // //
+                        // .other {
+                        //         font-size: 2.5rem;
+                        //         font-weight: bold;
+                        //         padding: 2rem 3rem;
+                        //      }
+                        .invite {
+                            // position: relative;
+                            // top: -15rem;
+                            width: 100%;
+                            background-color: transparent;
+                            font-size: 1.8rem;
+                            //color: white;
+                            padding-top: 0%;
+                        }
                     }
                 }
-                }
-                .section-pjs{
-                   margin-top: 3rem;
+                .section-pjs {
+                    margin-top: 3rem;
                 }
             }
             button {
                 color: $back-col-all;
                 border-style: none;
-                margin-left: 32%;
                 margin-top: 2rem;
                 padding: 1rem;
                 border-radius: 2rem;
@@ -284,85 +281,62 @@ body {
                 background-color: $light-col;
                 font-size: 1.2rem;
                 font-weight: bold;
-                text-align: center;
+                align-self: center;
+
                 &:hover {
-                    background-color: darken($light-col,5%);
+                    background-color: darken($light-col, 5%);
                 }
                 a {
                     padding: 0rem 30%;
                 }
             }
-            
         }
-        
     }
     footer {
         text-align: center;
         padding: 1.5rem;
         color: white;
     }
-    @media (max-width: 1200px) {
-        html {
-            font-size: 11px;
-            body {
-                main {
-                    .container {
-                        .content {
-                            .img {
-                                .color {
-                                    height: 180%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+}
+@media (max-width: 1200px) {
+}
 
-    @media (max-width: 900px) {
-        html {
-            font-size: 9px;
-            body {
-                main {
-                    .container {
-                        .fondo {
-                            width: 95%;
-                        }
-                        width: 95vw;
-                        .content {
-                            .img {
-                                .color {
-                                    height: 270%;
+@media (max-width: 900px) {
+    html {
+        font-size: 12px;
+        body {
+            main {
+                .container {
+                    .content {
+                        .texto-presentacion {
+                            font-size: 1.5rem;
+                            padding-bottom: 3rem;
+                            .hola {
+                                font-size: 2rem;
+                                width: 65px;
+                            }
+                            .nombre {
+                                font-size: 2.5rem;
+                                margin-bottom: 1.5rem;
+                            }
+                            button {
+                                margin-left: 0%;
+                                margin-top: 2rem;
+                                width: 150px;
+                                a {
+                                    padding: 0;
                                 }
                             }
-                            margin-top: 1rem;
-                            section {
-                                .fondo-pjs {
-                                    width: 100%;
-                                }
-                                .projects {
-                                    flex-wrap: wrap;
-                                    .project {
-                                        padding: 2rem;
-                                        width: 50%;
-                                        .on-top {
-                                            display: none;
-                                            img {
-                                                border-width: 0.5rem;
-                                                border-color: $light-col;
-                                            }
-                                        }
-                                        .on-top {
-                                            bottom: 15rem;
-                                            height: 14rem;
+                        }
+                        section {
+                            .fondo-pjs {
+                                .lista {
+                                    .educ {
+                                        .edu {
+                                            font-size: 1.2rem;
                                         }
                                     }
                                 }
-
-                                .other {
-                                    margin-top: 10rem;
-                                }
                             }
                         }
                     }
@@ -371,65 +345,37 @@ body {
         }
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 500px) {
         html {
-            font-size: 8px;
+            font-size: 10px;
             body {
                 main {
                     .container {
-                        .fondo {
-                            width: 100%;
-                        }
                         .content {
-                            margin-top: 0;
-                            .img {
-                                width: 90%;
-                                order: 2;
-                                img {
-                                    width: 65%;
-                                    position: absolute;
-                                    top: 19rem;
-                                }
-                                .color {
-                                    height: 600px;
-                                }
+                            .img-perfil {
+                                width: 70%;
                             }
-                            .texto {
-                                width: 95%;
-                                font-size: 2.7rem;
+                            .texto-presentacion {
+                                width: 100%;
+                                padding-left: 3rem;
                                 .hola {
-                                    font-size: 3.5rem;
-                                    width: 20%;
-                                }
-                                .nombre {
-                                    margin: 0;
-                                    margin-bottom: 77vw;
-                                    font-size: 4rem;
-                                }
-                                button {
-                                    margin-left: 55%;
-                                    width: 35%;
-                                    padding: 2rem;
-                                    font-size: 2rem;
+                                    font-size: 3rem;
+                                    width: 85px;
                                 }
                             }
                             section {
                                 .fondo-pjs {
-                                    p {
-                                        width: 50%;
+                                    .skills {
+                                        .skill {
+                                            width: 70px;
+                                            height: 100px;
+                                        }
                                     }
                                 }
                                 .projects {
-                                    flex-wrap: wrap;
                                     .project {
-                                        width: 90%;
+                                        width: 85%;
                                     }
-                                }
-                                .other {
-                                    top: -10rem;
-                                }
-                                .invite {
-                                    top: -10rem;
                                 }
                             }
                         }

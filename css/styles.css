@@ -355,6 +355,9 @@ body footer {
     font-size: 3rem;
     width: 85px;
   }
+  html body main .container .content div.redes {
+    font-size: 2.3rem;
+  }
   html body main .container .content section .fondo-pjs .skills .skill {
     width: 70px;
     height: 100px;
